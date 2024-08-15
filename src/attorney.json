@@ -1,0 +1,42 @@
+[ 
+    {   "head" : "Kevin Stiller" ,
+        "title" : "Bank & Financial Lawyer" ,
+        "body" : "Biography Cras justo odio, dapibus ac facilisis in, egestas eget quam. Praesent commodo cursus magna, vel scelerisque nisl..." ,
+        "image" : "assets/images/attorney/attorneyimage1.webp"
+    },
+    {   "head" : "Marisa Goldberg" ,
+        "title" : "Bank & Financial Lawyer" ,
+        "body" : "Biography Cras justo odio, dapibus ac facilisis in, egestas eget quam. Praesent commodo cursus magna, vel scelerisque nisl..." ,
+        "image" : "assets/images/attorney/attorneyimage2.webp"
+    },
+
+    {   "head" : "Eric Peterson" ,
+        "title" : "Bank & Financial Lawyer" ,
+        "body" : "Biography Cras justo odio, dapibus ac facilisis in, egestas eget quam. Praesent commodo cursus magna, vel scelerisque nisl..." ,
+        "image" :  "assets/images/attorney/attorneyimage3.webp"
+    } ,
+
+    { "head" : "Jack Smith" ,
+    "title" : "Bank & Financial Lawyer" ,
+    "body": "Biography Cras justo odio, dapibus ac facilisis in, egestas eget quam. Praesent commodo cursus magna, vel scelerisque nisl..." , 
+    "image" :  "assets/images/attorney/attorneyimage4.webp"
+    } ,
+
+    {   "head" : "Helen Ederson" ,
+        "title" : "Bank & Financial Lawyer" ,
+        "body": "Biography Cras justo odio, dapibus ac facilisis in, egestas eget quam. Praesent commodo cursus magna, vel scelerisque nisl..." , 
+        "image" : "assets/images/attorney/attorneyimage5.webp"
+    } ,
+
+    {   "head" : "Janet Jones" ,
+        "title" : "Bank & Financial Lawyer" ,
+        "body": "Biography Cras justo odio, dapibus ac facilisis in, egestas eget quam. Praesent commodo cursus magna, vel scelerisque nisl..." , 
+        "image" :  "assets/images/attorney/attorneyimage6.webp"
+    }
+    ,
+    {   "head" : "John Doe" ,
+        "title" : "Bank & Financial Lawyer" ,
+        "body": "Biography Cras justo odio, dapibus ac facilisis in, egestas eget quam. Praesent commodo cursus magna, vel scelerisque nisl..." , 
+        "image" :  "assets/images/attorney/attorneyimage7.webp"
+    }
+]

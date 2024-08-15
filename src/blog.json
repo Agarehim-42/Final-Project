@@ -1,0 +1,22 @@
+[
+    {
+        "image": "assets/images/blog/blog1.webp",
+        "time" : "03 Dec 2013" ,
+        "contact" : "John Doe" , 
+        "message" : "0" ,
+        "file" : "Blog , Fit Row" ,
+        "head": "Sedial eiusmod tempor",
+        "body": "Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Idque Caesaris facere voluntate liceret: sese habere. Magna pars studiorum, prodita quaerimus. Magna pars studiorum, prodita quaerimus. Fabio vel iudice vincam, sunt in culpa..." ,
+        "read" : "Read More"
+    } ,
+    {
+        "image": "assets/images/blog/blog2.webp",
+        "time" : "13 Nov 2013" ,
+        "contact" : "John Doe" , 
+        "message" : "2" ,
+        "file" : "Blog , Fit Row" ,
+        "head": "Sedial eiusmod tempor",
+        "body": "Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Idque Caesaris facere voluntate liceret: sese habere. Magna pars studiorum, prodita quaerimus. Magna pars studiorum, prodita quaerimus. Fabio vel iudice vincam, sunt in culpa..." ,
+        "read" : "Read More"
+    }
+]

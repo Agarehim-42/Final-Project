@@ -1,0 +1,1545 @@
+body {
+    background-color: #fff;
+    overflow-x: hidden;
+    
+   
+    
+}
+
+
+
+
+/* * {
+    border: 1px solid red;
+} */
+
+
+header {
+    position: sticky;
+    transition: height 0.3s ease, background-color 0.3s ease;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99999; /* Digər elementlərdən üstündə olmasını təmin edir */
+    background-color: white; /* Arxa planı ağ edir ki, altdakı məzmun görünməsin */
+    height: 250px; /* Header-in hündürlüyünü uyğunlaşdır */
+}
+
+.header.scrolled {
+    height: 120px; /* Scroll edildikdə başlığın hündürlüyü */
+    transition: height 0.3s ease, background-color 0.3s ease;
+    padding-top: 30px;
+    z-index: 99999;
+}
+
+.top-navigation-wrapper.d-none {
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    z-index: 99999;
+}
+
+.sosial-header {
+    font-size: 20px;
+
+}
+
+.navbar-toggler {
+    border-radius: 1px;
+    height: 50px;
+    width: 60px;
+}
+
+.navbar-nav {
+    font-size: 16px;
+    font-style: inherit;
+}
+
+
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: -2px 0 5px rgba(0,0,0,0.5);
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 9999;
+}
+
+.mobile-menu.open {
+    transform: translateX(0);
+}
+
+.mobile-menu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.mobile-logo-header {
+    height: 50px;
+}
+
+.close-mobile-menu {
+    font-size: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #000;
+}
+
+.mobile-links {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.mobile-links a {
+    padding: 10px 0;
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    border-bottom: 1px solid #ddd;
+}
+
+.mobile-links a:hover {
+    color: #007bff;
+}
+
+
+
+.introduction {
+    background-image: url('/assets/images/welcome/Welcome1.webp');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+
+.introduction2 {
+    background-image: url('/assets/images/welcome/Welcome2.webp');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* .introduction , .introduction2  {
+    font-size: 15px;
+    letter-spacing: 2px;
+    opacity: .6;
+    
+} */
+
+.contact-now {
+    /* background: linear-gradient(rgb(131, 102, 62) 0%, rgb(176, 150, 106) 100%);
+    font-weight: 700;
+    font-size: 8px;
+    border-color: rgb(0, 0, 0);
+    border-radius: 3px;
+    padding: 9px 11px 10px 15px;
+    color: #fff; */
+    background: linear-gradient(rgb(131, 102, 62) 0%, rgb(176, 150, 106) 100%);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: transform 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    letter-spacing: 2px;
+    font-weight: 700;
+
+}
+
+.contact-now:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+.bookinfo-left-side {
+    background: #b1976b;
+
+
+}
+
+.bookpicture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.bookinfo-right-side {
+    background-color: #fff;
+}
+
+.bookicon {
+    font-size: 56px;
+}
+
+.picon {
+    font-size: 15px;
+}
+
+.Welcome-h3 , .professional-h3 {
+    color: #b1976b;
+}
+
+/* Swiper naviqasiya düymələri üçün tərz */
+/* Swiper naviqasiya düymələri üçün xüsusi tərz */
+.mySwiper .swiper-button-next,
+.mySwiper .swiper-button-prev {
+  color: #ffffff !important; /* Rəngini ağ edir və prioritet verir */
+}
+
+
+
+.bookinfo-right-side {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* .email-header {
+    float: left;
+    line-height: 20px;
+    display: flex; 
+    padding: 0px 25px;
+}
+
+.phone-header {
+    display: flex; 
+    float: left;
+    line-height: 20px;
+    padding: 0px 25px;
+    
+    
+} */
+
+.lawmen-section {
+    background-image: url('/assets/images/lawmen/Lawmen.webp');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.jacksmit {
+    width: 305px;
+    height: 434px;
+}
+
+.lawmen-left-side {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.consult-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.consult-card1 {
+    background-image: url('/assets/images/consult/image1.webp');
+
+}
+
+
+.consult-card2 {
+    background-image: url('/assets/images/consult/image2.webp');
+
+}
+
+
+.consult-card3 {
+    background-image: url('/assets/images/consult/image3.webp');
+
+}
+
+.consult-card4 {
+    background-image: url('/assets/images/consult/image4.webp');
+
+}
+
+.a-practices-view , .talk-to-us , .phone-consult , .arrow-alt-right {
+    color: #b1976b;
+}
+
+.phone-consult {
+    font-size: 31px;
+}
+
+
+
+
+
+
+
+/* .consult2swip {
+    margin-right: 0 auto;
+} */
+
+/* .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+} */
+
+/* .legal-areas {
+    margin-bottom: 2rem;
+} */
+
+.mySwiper {
+    width: 100%;
+    height: 100%;
+}
+
+.consult-cards {
+    display: flex;
+    justify-content: center;
+}
+
+.consult-card1, .consult-card2, .consult-card3, .consult-card4, .consult-card5, .consult-card6, .consult-card7, .consult-card8 , .consult-card9 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 1.2s;
+    background-size: cover;
+    background-position: center;
+    background-color: #b1976b;
+    background-image: none;
+    opacity: 0.8;
+    cursor: pointer;
+    font-weight: 700;
+
+}
+.practice-card1, .practice-card2, .practice-card3, .practice-card4, .practice-card5, .practice-card6, .practice-card7, .practice-card8 , .practice-card9 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 1.2s;
+    background-size: cover;
+    background-position: center;
+    background-color: #b1976b;
+    background-image: none;
+    opacity: 0.8;
+    cursor: pointer;
+    font-weight: 700;
+
+}
+
+.consult-card1:hover {
+    background-image: url('/assets/images/consult/image1.webp');
+    opacity: 1;
+    transform: scale(0.9);
+}
+
+.consult-card2:hover {
+    background-image: url('/assets/images/consult/image2.webp');
+    ;
+    opacity: 1;
+    transform: scale(0.9);
+}
+
+.consult-card3:hover {
+    background-image: url('/assets/images/consult/image3.webp');
+    ;
+    opacity: 1;
+    transform: scale(0.9);
+}
+
+.consult-card4:hover {
+    background-image: url('/assets/images/consult/image4.webp');
+    ;
+    opacity: 1;
+    transform: scale(0.9);
+}
+
+.consult-card5:hover {
+    background-image: url('/assets/images/consult/image5.webp');
+    ;
+    opacity: 1;
+    transform: scale(0.9);
+}
+
+.consult-card6:hover {
+    background-image: url('/assets/images/consult/image6.webp');
+    ;
+    opacity: 1;
+    transform: scale(0.9);
+}
+
+.consult-card7:hover {
+    background-image: url('/assets/images/consult/image7.webp');
+    ;
+    opacity: 1;
+    transform: scale(0.9);
+}
+
+.consult-card8:hover {
+    background-image: url('/assets/images/consult/image8.webp');
+    ;
+    opacity: 1;
+    transform: scale(0.9);
+}
+.consult-card9:hover {
+    background-image: url('/assets/images/consult/image9.webp');
+    ;
+    opacity: 1;
+    transform: scale(0.9);
+}
+
+.practice-card1:hover {
+    background-image: url('/assets/images/consult/image1.webp');
+    opacity: 1;
+    transform: scale(0.9);
+}
+
+.practice-card2:hover {
+    background-image: url('/assets/images/consult/image2.webp');
+    ;
+    opacity: 1;
+    transform: scale(0.9);
+}
+
+.practice-card3:hover {
+    background-image: url('/assets/images/consult/image3.webp');
+    ;
+    opacity: 1;
+    transform: scale(0.9);
+}
+
+.practice-card4:hover {
+    background-image: url('/assets/images/consult/image4.webp');
+    ;
+    opacity: 1;
+    transform: scale(0.9);
+}
+
+.practice-card5:hover {
+    background-image: url('/assets/images/consult/image5.webp');
+    ;
+    opacity: 1;
+    transform: scale(0.9);
+}
+
+.practice-card6:hover {
+    background-image: url('/assets/images/consult/image6.webp');
+    ;
+    opacity: 1;
+    transform: scale(0.9);
+}
+
+.practice-card7:hover {
+    background-image: url('/assets/images/consult/image7.webp');
+    ;
+    opacity: 1;
+    transform: scale(0.9);
+}
+
+.practice-card8:hover {
+    background-image: url('/assets/images/consult/image8.webp');
+    ;
+    opacity: 1;
+    transform: scale(0.9);
+}
+.practice-card9:hover {
+    background-image: url('/assets/images/consult/image9.webp');
+    ;
+    opacity: 1;
+    transform: scale(0.9);
+}
+
+
+
+.consult-card1,
+.consult-card2,
+.consult-card3,
+.consult-card4,
+.consult-card5,
+.consult-card6,
+.consult-card7,
+.consult-card8 ,
+.consult-card9 {
+    width: 300px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: auto;
+}
+
+.practice-card1,
+.practice-card2,
+.practice-card3,
+.practice-card4,
+.practice-card5,
+.practice-card6,
+.practice-card7,
+.practice-card8,
+.practice-card9{
+    width: 300px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: auto;
+}
+
+.testimonial-section {
+    background-color: #f5f5f5;
+}
+
+
+
+.Testimonial-prev , .Testimonial-next {
+    /* text-decoration: none; Altından xətti silmək */
+    border-color: #eaeaea;
+    ;
+    /* Düymənin standart sərhədini silmək */
+    background-color: #eaeaea;
+    border-radius: 2px;
+    /* Düymənin standart fonunu silmək */
+    /* color: inherit; Mövcud rəngini qorumaq */
+    cursor: pointer;
+    /* Cursor dəyişmək */
+    font-size: 16px;
+    padding: 10px 16px;
+    border: none;
+}
+
+.Testimonial-prev:hover , .Testimonial-next:hover {
+    background-color: #b1976b;
+    /* Hover zamanı rəng dəyişmək */
+    color: #fff;
+    transition: color 200ms, background-color 200ms;
+}
+
+.Oliver-shansder {
+    color: #b1976b;
+}
+
+.testi-image img {
+    border-radius: 50%;
+    /* Dairəvi şəkillər */
+    width: 100%;
+    height: 100%;
+    /* Şəkilin ölçüsünü tənzimləyin */
+    object-fit: cover;
+    /* Şəkilin mütənasib qalmasını təmin edir */
+}
+
+.testimonial-paragraf {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+.testimonial-paragraf {
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+    margin-top: 10px;
+}
+
+.testimonial-paragraf {
+    margin: 0;
+}
+
+
+.news-left-side {
+    border: 1px solid #ddd;
+    padding: 12px 2px;
+    margin-right: 15px;
+    border-radius: 1px;
+    background-color: #b1976b
+
+}
+
+.blog-date-day {
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.h4news {
+    color: #b1976b;
+}
+
+.news-date-box {
+    width: 217px;
+    height: 80px;
+    border: 1px solid #ccc;
+    /* border-radius: 5px; */
+    background-color: #b1976b;
+    text-align: center;
+    color: #fff;
+}
+
+
+.anews {
+    color: #b1976b;
+    font-style: italic;
+}
+
+
+.Attorney-prev , .Attorney-next {
+    /* text-decoration: none; Altından xətti silmək */
+    border-color: #eaeaea;
+    ;
+    /* Düymənin standart sərhədini silmək */
+    background-color: #eaeaea;
+    border-radius: 2px;
+    /* Düymənin standart fonunu silmək */
+    /* color: inherit; Mövcud rəngini qorumaq */
+    cursor: pointer;
+    /* Cursor dəyişmək */
+    font-size: 16px;
+    padding: 10px 16px;
+    border: none;
+}
+
+.Attorney-prev:hover , .Attorney-next:hover {
+    background-color: #b1976b;
+    /* Hover zamanı rəng dəyişmək */
+    color: #fff;
+    transition: color 200ms, background-color 200ms;
+}
+
+
+
+
+.navigation-button .prev-test,
+.navigation-button .next-test {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+
+.Contact-email-section {
+    background-image: url('/assets/images/contactemail/email1.jpg') ; 
+    
+}
+
+
+.Client-prev , .Client-next {
+    /* text-decoration: none; Altından xətti silmək */
+    border-color: #eaeaea;
+    ;
+    /* Düymənin standart sərhədini silmək */
+    background-color: #eaeaea;
+    border-radius: 2px;
+    /* Düymənin standart fonunu silmək */
+    /* color: inherit; Mövcud rəngini qorumaq */
+    cursor: pointer;
+    /* Cursor dəyişmək */
+    font-size: 16px;
+    padding: 10px 16px;
+    border: none;
+}
+
+.Client-prev:hover , .Client-next:hover {
+    background-color: #b1976b;
+    /* Hover zamanı rəng dəyişmək */
+    color: #fff;
+    transition: color 200ms, background-color 200ms;
+}
+
+
+
+.footbg {
+    background-color: #262626;
+}
+
+.footer-sosial-net {
+    font-size: 34px;
+}
+
+
+
+.client-section {
+    padding: 3rem 0;
+}
+
+.client-section h1 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.navigation-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+
+.Contact-email-section {
+    padding: 2rem 0;
+}
+
+.contact-form input, .contact-form textarea {
+    background-color: #444;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+.contact-form input::placeholder, .contact-form textarea::placeholder {
+    color: #bbb;
+}
+
+.contact-form textarea {
+    resize: none;
+}
+
+.email-right-side img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+
+
+.submit-button {
+    /* background: linear-gradient(rgb(131, 102, 62) 0%, rgb(176, 150, 106) 100%);
+    font-weight: 700;
+    font-size: 8px;
+    border-color: rgb(0, 0, 0);
+    border-radius: 3px;
+    padding: 9px 11px 10px 15px;
+    color: #fff; */
+    background: linear-gradient(rgb(131, 102, 62) 0%, rgb(176, 150, 106) 100%);
+    border: none;
+    color: white;
+    padding: 20px 60px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: transform 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    letter-spacing: 2px;
+    font-weight: 700;
+
+}
+
+.submit-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.nav-link-pages {
+    border-bottom: 1px solid #ddd;
+}
+
+
+
+.about-us-picture {
+    background-image: url('/assets/images/aboutus/page-title-background.jpg') ;  
+    background-size: cover; /* Şəkilin div içərisində tam əhatə etməsi üçün */
+    background-position: center; /* Şəkilin ortasında yerləşməsi üçün */
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.example-h4 {
+    color: #b1976b;
+}
+
+.About-us-h3  {
+    font-style: italic;
+}
+
+.porta-h3  {
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.iphone5-phone-png {
+    width: 250px;
+    height: 625px;
+}
+
+
+.iphone5-reng {
+    background-color: #f5f5f5;
+}
+    
+
+.Fa-Book-About {
+    background-color: #3e3e3e;
+    width: 78px; /* En */
+    height: 78px; /* Hündürlük */
+    
+    border-radius: 50%; /* Dairəvi forma */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Kölgə effekti */
+    margin: 20px auto; }
+
+.fa-book-color {
+    color: #b1976b;
+    font-size: 30px;
+  
+}
+
+.skill-png {
+    background-image: url('/assets/images/lawmen/Lawmen.webp');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+   
+    
+}
+
+.skillboxlar h3 {
+    margin: 5px;
+
+}
+
+.skillboxlar {
+    width: 500px;
+    margin: 60px auto;
+    color: #fff;
+    padding: 20px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25) , 0 10px 10px rgba(0 ,0 , 0 , 0.22) ;
+}
+
+.skillboxlar li {
+    margin: 20px 0;
+    padding: 10px;
+
+}
+
+.bar {
+    background-color: #353b48 ;
+    display: block;
+    height: 20px;
+    border: 1px solid rgba(0 ,0 , 0 , 0.3);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0 ,0 , 0 , 0.12) , 0 1px 2px rgba(0 ,0 , 0 , 0.24);
+    transition: all 0.3s cubic-bezier(.25 , .8 , .25 , 1);
+}
+
+.bar:hover {
+    box-shadow: 0 14px 28px rgba(0 ,0 , 0 , 0.25) , 0 10px 10px rgba(0 ,0 , 0 , 0.22);
+
+}
+
+.bar span {
+    height: 20px;
+    float: left;
+    background: linear-gradient(135deg, rgba(236, 177, 0, 0.549)0% , rgba(252, 190, 103, 0.768)100% );
+}
+
+.Banking-Financial , .Corporate-Issue , .Family-Law , .Real-Estate {
+    width: 90%;
+}
+
+.Banking-Financial {
+    width: 100%;
+    animation: Banking-Financial 3s; 
+    
+}
+.Corporate-Issue {
+    width: 73%;
+    animation: Corporate-Issue 3s; 
+
+}
+.Family-Law {
+    width: 82%;
+    animation: Family-Law 3s; 
+
+}
+.Real-Estate {
+    width: 63%;
+    animation: Real-Estate 3s; 
+
+}
+
+.skillboxlar li {
+    list-style: none;
+  }
+
+@keyframes Banking-Financial {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+@keyframes Corporate-Issue {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 73%;
+    }
+}
+@keyframes Family-Law {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 82%;
+    }
+}
+@keyframes Real-Estate {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 63%;
+    }
+}
+
+.Commodo-tellus-bg {
+    background-color: #b1976b;
+}
+
+
+.commodo-p-size {
+    font-size: 20px;
+}
+
+
+.phone-commodo {
+    font-size: 20px;
+}
+
+.line {
+    flex-grow: 1; /* Xəttin genişliyini artırmaq üçün */
+    height: 1px; /* Xəttin qalınlığı */
+    background-color: #000; /* Xəttin rəngi */
+    margin: 0 10px; /* İkon ilə xətt arasındakı məsafə */
+  }
+
+  .h6-read-blog{
+    color: #b1976b;
+  }
+
+  
+  .men-pen-blog {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+
+.men-pen-blog {
+    width: 750px;
+    height: 323px;
+  }
+
+
+  .blog-box-in {
+    font-size: 19px;
+    font-style: italic;
+    padding: 30px 30px 30px;
+    line-height: 1.5;
+    background-color: #b1976b;
+    color: #fff;
+   
+   
+    border-radius: 4px;
+  }
+
+  .form-input {
+    border-width: 0px;
+    border-style: solid;
+    width: 100%;
+     
+    border-radius: 3px;
+    font-size: 13px;
+    padding: 17px 17px;
+}
+
+
+.search-input-container {
+    position: relative;
+    width: 70%;
+   
+    display: flex;
+    align-items: center;
+  }
+
+  
+  .search-input {
+    width: 100%;
+    padding: 20px 10px ; /* Extra padding on the right for the icon */
+    border: 1px solid #ccc;
+    
+    background-color: #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+
+  .search-input-error {
+    width: 100%;
+    padding: 10px 50px ; /* Extra padding on the right for the icon */
+    border: 1px solid #ccc;
+    
+    background-color: #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  .search-icon {
+    position: absolute;
+    right: 10px; /* Adjust this value as needed */
+    font-size: 16px;
+    color: #555;
+    cursor: pointer;
+  }
+  
+
+  .text-widget-ff {
+    font-style: italic;
+  }
+
+  .card-blog-1 {
+    border-bottom: 1px solid #000;
+}
+  
+.span-blog-yazi {
+    color: #b1976b;
+}
+
+.tag-cloud a {
+   
+        font-size: 11px !important;
+        display: block;
+        float: left;
+        padding: 7px 13px;
+        margin-right: 7px;
+        margin-top: 7px;
+        border: 0px solid;
+        border-color: inherit;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #ffffff;
+        background-color: #b1976b;
+        text-decoration: none;
+    }
+
+
+   .blog-swiper {
+    background-size: cover;
+        /* background-position: center; */
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      
+   }
+
+   .red-error-page {
+    text-align: center;
+    padding: 50px 50px 60px;
+    margin: 50px 0px 50px;
+    background-color: #d65938;
+   }
+
+   .frown-error {
+    font-size: 89px;
+   }
+
+   .search-input-container-error {
+    position: relative;
+    width: 100%;
+   
+    display: flex;
+    align-items: center;
+  }
+ 
+
+  header {
+  position: sticky;
+  top: 0; /* Header ekranın yuxarı hissəsində yapışacaq */
+  z-index: 99999999999; /* Header-in digər elementlərin üstündə olması üçün */
+  height: 200px;
+}
+
+.scrolled {
+    height: 80px; 
+   
+}
+
+.top-navigation-wrapper.d-none {
+    display: none;
+}
+
+.navbar-scrolled .logo-header {
+    display: none;
+}
+
+
+
+
+
+
+
+@media(min-width:320px), (max-width:500px) {
+    .top-navigation-right-text {
+        font-size: 13px;
+        /* display: flex; */
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+
+
+
+    }
+
+    .navigation-button {
+        display: flex;
+        justify-content: center; /* Aligns buttons to the left */
+        align-items: center;
+        margin-bottom: 1rem; /* Adds space below the buttons */
+    }
+
+    .logo-header {
+        width: 150px;
+    }
+
+    /* .contact-now {
+        display: none;
+    } */
+
+    .testimonial-paragraf {
+        font-size:9px;
+    }
+
+
+    .navbar-collapse {
+        display: none;
+    }
+
+
+    .men-pen-blog {
+        width: 100%;
+        height: 100%;
+      }
+
+      .learn-more-blog {
+        font-size: 12px;
+        font-style: normal;
+      }
+    
+
+    
+
+}
+
+
+
+@media(min-width:768px) {
+    .email-header {
+        float: left;
+        line-height: 20px;
+        display: flex;
+        padding: 0px 25px;
+        border-right-width: 1px;
+        border-right-style: solid;
+        border-right-color: gray;
+    }
+
+    .phone-header {
+        display: flex;
+        float: left;
+        line-height: 20px;
+        padding: 0px 25px;
+        border-right-width: 1px;
+        border-right-style: solid;
+        border-right-color: gray;
+
+    }
+
+    .top-navigation-right-text {
+        font-size: 13px;
+        /* display: flex; */
+        justify-content: center;
+        display: flex;
+        flex-direction: row;
+    }
+
+
+    .navbar-brand {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+
+    .logo-header {
+        width: 140px;
+    }
+
+
+    .introduction {
+        background-image: url('/assets/images/welcome/Welcome1.webp');
+        background-size: cover;
+        /* background-position: center; */
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+    }
+
+
+    .introduction2 {
+        background-image: url('/assets/images/welcome/Welcome2.webp');
+        background-size: cover;
+        /* background-position: center; */
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+    }
+
+    .introduction h3 {
+        /* font-size: 36px; */
+        letter-spacing: 2px;
+
+    }
+
+    .introduction h1 {
+        font-size: 50px;
+        letter-spacing: 2px;
+
+    }
+
+    .introduction p {
+        font-size: 20px;
+        letter-spacing: 2px;
+        opacity: .6;
+
+    }
+
+
+    .introduction2 h3 {
+        /* font-size: 36px; */
+        letter-spacing: 2px;
+
+    }
+
+    .introduction2 h1 {
+        font-size: 50px;
+        letter-spacing: 2px;
+
+    }
+
+    .introduction2 p {
+        font-size: 20px;
+        letter-spacing: 2px;
+        opacity: .6;
+
+    }
+
+    .jacksmit {
+        width: 348px;
+        height: 568px;
+    }
+
+    .testimonial-section {
+        padding: 20px 0;
+    }
+
+    .swiper-tesimonial {
+        padding: 0;
+    }
+
+    /* .testi-card {
+    flex-direction: column;
+    text-align: center;
+  } */
+
+    .testi-image {
+        margin-bottom: 15px;
+    }
+
+
+
+    .testimonial-paragraf {
+        font-size: 13px;
+    }
+
+    /* .testi-image img {
+    width: 80px;
+    height: 80px;
+  } */
+
+    /* .testi-posts {
+    margin-left: 0;
+  } */
+
+
+  /* .navigation-button {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    margin-bottom: 1rem; 
+} */
+
+
+.navigation-button {
+    justify-content: flex-end;
+    margin-top: -4rem;
+}
+
+.skill-png {
+    background-image: url('/assets/images/lawmen/Lawmen.webp');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+   
+    
+}
+
+
+
+.practice-card1, .practice-card2, .practice-card3, .practice-card4, .practice-card5, .practice-card6, .practice-card7, .practice-card8, .practice-card9 {
+    width: 193px;
+    height: 178px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: auto;
+}
+
+
+
+
+}
+
+
+@media (max-width: 767px) {
+    .testi-imagee {
+        display: none;
+    }
+    .navigation-button {
+        justify-content: center;
+        margin-top: 1rem;
+    }
+}
+
+
+
+
+
+@media(min-width:992px) {
+    .top-navigation-right-text {
+        font-size: 13px;
+        /* display: flex; */
+        justify-content: center;
+        display: flex;
+        flex-direction: row;
+    }
+
+
+    /* .collapse , .navbar-collapse {
+    position: sticky;
+} */
+
+    .introduction {
+        background-image: url('/assets/images/welcome/Welcome1.webp');
+        background-size: cover;
+        /* background-position: center; */
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .introduction h3 {
+        font-size: 36px;
+        letter-spacing: 2px;
+
+    }
+
+    .introduction h1 {
+        font-size: 90px;
+        letter-spacing: 2px;
+
+    }
+
+    .introduction p {
+        font-size: 21px;
+        letter-spacing: 2px;
+        opacity: .6;
+
+    }
+
+
+    .introduction2 {
+        background-image: url('/assets/images/welcome/Welcome2.webp');
+        background-size: cover;
+        /* background-position: center; */
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+    }
+
+    .introduction2 h3 {
+        font-size: 36px;
+        letter-spacing: 2px;
+
+    }
+
+    .introduction2 h1 {
+        font-size: 90px;
+        letter-spacing: 2px;
+
+    }
+
+    .introduction2 p {
+        font-size: 21px;
+        letter-spacing: 2px;
+        opacity: .6;
+
+    }
+
+
+    .jacksmit {
+        width: 348px;
+        height: 568px;
+    }
+
+    .consult-card1,
+    .consult-card2,
+    .consult-card3,
+    .consult-card4,
+    .consult-card5,
+    .consult-card6,
+    .consult-card7,
+    .consult-card8,
+    .consult-card9 {
+        width: 350px;
+        height: 250px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin: auto;
+    }
+
+    .practice-card1, .practice-card2, .practice-card3, .practice-card4, .practice-card5, .practice-card6, .practice-card7, .practice-card8, .practice-card9 {
+        width: 354px;
+        height: 241px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin: auto;
+    }
+
+    .navigation-button {
+        display: flex;
+        justify-content: flex-end; /* Aligns buttons to the left */
+        margin-bottom: 1rem; /* Adds space below the buttons */
+    }
+
+
+    /* .footbg {
+        margin-top: 120px;
+    } */
+
+    .skill-png {
+        background-image: url('/assets/images/lawmen/Lawmen.webp');
+        background-size: cover;
+        background-position: center;
+        height: 100%;
+       
+        
+    }
+
+    .Commodo-tellus-bg {
+        background-color: #b1976b;
+        /* height: ; */
+    }
+
+   
+   
+
+
+}
