@@ -1,4 +1,4 @@
-import React , {useRef}  from 'react';
+import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser'
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -7,27 +7,25 @@ import Button from './Button';
 const Contactemail: React.FC = () => {
     const myForm = useRef<HTMLFormElement>(null)
 
-  const sendEmail = (e:React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
+    const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
 
-  if(myForm.current) {
-    emailjs
-    .sendForm('service_dy6agc7', 'template_l8cohvl', myForm.current, {
-      publicKey: '3qGfRZ6FocuspBObD',
-    })
-    .then(
-      () => {
-        toast.success("Message sent successfully")
-        
-      },
-      () => {
-        toast.error("There is an error on the server. Try again later :)")
-      },
-    );
+        if (myForm.current) {
+            emailjs.sendForm('service_dy6agc7', 'template_l8cohvl', myForm.current, '3qGfRZ6FocuspBObD')
 
-    myForm.current.reset()
-  }
-  };
+                .then(
+                    () => {
+                        toast.success("Mesaj Ugurla Gonderildi")
+
+                    },
+                    () => {
+                        toast.error("Mesaj gonderilmedi")
+                    },
+                );
+
+            myForm.current.reset()
+        }
+    };
     return (
         <div className='Contact-email-section py-4'>
             <div className="container">
@@ -42,7 +40,7 @@ const Contactemail: React.FC = () => {
                                 <input type="email" className="form-control mb-3" placeholder="Email " name='Email' />
                                 <textarea className="form-control mb-3" rows={5} placeholder="Message" name='Message'></textarea>
                                 <div className="d-flex justify-content-center">
-                                <Button inTextBtn="SUBMIT"  shekil="" klassadi="submit-button my-5"  />
+                                    <Button inTextBtn="SUBMIT" shekil="" klassadi="submit-button my-5" />
                                 </div>
                             </form>
                         </div>

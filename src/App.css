@@ -26,7 +26,7 @@ header {
 }
 
 .header.scrolled {
-    height: 120px; /* Scroll edildikdə başlığın hündürlüyü */
+    height: 120px; 
     transition: height 0.3s ease, background-color 0.3s ease;
     padding-top: 30px;
     z-index: 99999;

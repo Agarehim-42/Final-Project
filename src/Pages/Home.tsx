@@ -9,6 +9,7 @@ import Lawmen from '../components/Lawmen'
 import Testimonial from '../components/Testimonial'
 import Welcomes from '../components/Welcomes'
 import { ToastContainer } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css';
 
 
 

@@ -1,17 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import { GrPrevious, GrNext } from "react-icons/gr";
-// Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { FaLongArrowAltRight } from 'react-icons/fa'
 
-// Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
-// import required modules
 import { Autoplay, Navigation } from 'swiper/modules';
-
 import NavButtons from './NavButtons';
 
 interface Post {
@@ -26,7 +22,7 @@ const Testimonial: React.FC = () => {
     useEffect(() => {
         fetch('https://jsonplaceholder.typicode.com/posts')
             .then(response => response.json())
-            .then(data => setPosts(data.slice(0, 9))); // Get the first 100 posts
+            .then(data => setPosts(data.slice(0, 9))); // İlk 9 postu alın
     }, []);
 
     return (
@@ -75,10 +71,8 @@ const Testimonial: React.FC = () => {
                                                     <img className='testi-imagee' src="/assets/images/testimonial/testimonial1.webp" alt="" />
                                                     <div className='testi-posts'>
                                                         <div className="post-box d-flex flex-column px-5">
-                                                            <p><b>Lawyer Base just saved my life!
-                                                            </b>
-                                                            </p>
-                                                            <p className='testimonial-paragraf'>Aenean lacinia bibendum nulla sed cons ectetur. Morbi leo risus, porta ac conse ctet ur ac, vesti bulum at eros. Etiam porta sem mal esuada magna mollis euismod. Etiam porta sem malesuada magna mo llis eu. Donec ullamcorper nulla non metus auctor.</p>
+                                                            <p><b>Lawyer Base just saved my life!</b></p>
+                                                            <p className='testimonial-paragraf'>Aenean lacinia bibendum nulla sed consectetur. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Etiam porta sem malesuada magna mollis euismod. Etiam porta sem malesuada magna mollis eu. Donec ullamcorper nulla non metus auctor.</p>
                                                             <span className='Oliver-shansder  py-2'>Oliver Shansder</span>
                                                             <span>Father of two sons</span>
                                                         </div>
@@ -92,10 +86,8 @@ const Testimonial: React.FC = () => {
                                                     <img className='testi-imagee' src="/assets/images/testimonial/testimonial2.webp" alt="" />
                                                     <div className='testi-posts'>
                                                         <div className="post-box d-flex flex-column px-5">
-                                                            <p><b>I got my money back!
-                                                            </b>
-                                                            </p>
-                                                            <p className='testimonial-paragraf'>Aenean lacinia bibendum nulla sed cons ectetur. Morbi leo risus, porta ac conse ctet ur ac, vesti bulum at eros. Etiam porta sem mal esuada magna mollis euismod. Etiam porta sem malesuada magna mo llis eu. Donec ullamcorper nulla non metus auctor.</p>
+                                                            <p><b>I got my money back!</b></p>
+                                                            <p className='testimonial-paragraf'>Aenean lacinia bibendum nulla sed consectetur. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Etiam porta sem malesuada magna mollis euismod. Etiam porta sem malesuada magna mollis eu. Donec ullamcorper nulla non metus auctor.</p>
                                                             <span className='Oliver-shansder  py-2'>Santana White</span>
                                                             <span>Car Accidents</span>
                                                         </div>
@@ -109,10 +101,8 @@ const Testimonial: React.FC = () => {
                                                     <img className='testi-imagee' src="/assets/images/testimonial/testimonial3.webp" alt="" />
                                                     <div className='testi-posts '>
                                                         <div className="post-box d-flex flex-column px-5 ">
-                                                            <p><b>Now I can get my business running!
-                                                            </b>
-                                                            </p>
-                                                            <p className='testimonial-paragraf'>Aenean lacinia bibendum nulla sed cons ectetur. Morbi leo risus, porta ac conse ctet ur ac, vesti bulum at eros. Etiam porta sem mal esuada magna mollis euismod. Etiam porta sem malesuada magna mo llis eu. Donec ullamcorper nulla non metus auctor.</p>
+                                                            <p><b>Now I can get my business running!</b></p>
+                                                            <p className='testimonial-paragraf'>Aenean lacinia bibendum nulla sed consectetur. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Etiam porta sem malesuada magna mollis euismod. Etiam porta sem malesuada magna mollis eu. Donec ullamcorper nulla non metus auctor.</p>
                                                             <span className='Oliver-shansder py-2'>James Bond</span>
                                                             <span>Financial Issue</span>
                                                         </div>
@@ -127,10 +117,10 @@ const Testimonial: React.FC = () => {
                     </div>
                     <div className="api-news col-12 col-md-6 col-lg-6">
                         {posts.map(post => (
-                            <div className="recent-news  py-5">
-                                <div className="news d-flex ">
-                                    <div className="news-left-side news-date-box d-flex flex-column ">
-                                        <span className="blog-date-day "><b>21</b></span>
+                            <div className="recent-news py-5" key={post.id}>
+                                <div className="news d-flex">
+                                    <div className="news-left-side news-date-box d-flex flex-column">
+                                        <span className="blog-date-day"><b>21</b></span>
                                         <span className="blog-date-month">Mar</span>
                                     </div>
 
@@ -141,7 +131,6 @@ const Testimonial: React.FC = () => {
                                     </div>
                                 </div>
                             </div>
-
                         ))}
                     </div>
                 </div>
