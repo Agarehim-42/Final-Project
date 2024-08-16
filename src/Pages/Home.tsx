@@ -8,6 +8,8 @@ import Contactemail from '../components/Contactemail'
 import Lawmen from '../components/Lawmen'
 import Testimonial from '../components/Testimonial'
 import Welcomes from '../components/Welcomes'
+import { ToastContainer } from 'react-toastify'
+
 
 
 const Home: React.FC = () => {
@@ -21,6 +23,7 @@ const Home: React.FC = () => {
             <Testimonial />
             <Attorneys />
             <Contactemail />
+            <ToastContainer/>
             <Client />
         </div>
     )

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { FaRegEnvelope, FaFacebook, FaLinkedin, FaPinterest, FaTwitterSquare, FaBars, FaSearch } from "react-icons/fa";
 import { MdLocalPhone } from "react-icons/md";
 import { IoLogoFlickr } from "react-icons/io5";
@@ -8,7 +8,7 @@ import { IoIosCloseCircle } from "react-icons/io";
 const Header: React.FC = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-    const [isScrolled, setIsScrolled] = useState(false);
+    const [isScrolled] = useState(false);
 
     const toggleNavbar = () => {
         setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -22,21 +22,9 @@ const Header: React.FC = () => {
         setIsDropdownOpen(!isDropdownOpen);
     };
 
-    const handleScroll = () => {
-        if (window.scrollY > 50) {
-            setIsScrolled(true);
-        } else {
-            setIsScrolled(false);
-        }
-    };
+  
 
-    useEffect(() => {
-        window.addEventListener('scroll', handleScroll);
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
-    }, []);
-
+   
     return (
         <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
             <div className={`top-navigation-wrapper ${isScrolled ? 'd-none' : ''}`}>
