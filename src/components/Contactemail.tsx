@@ -1,10 +1,20 @@
-import React, { useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 import emailjs from '@emailjs/browser'
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Button from './Button';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Contactemail: React.FC = () => {
+    useEffect(() => {
+        AOS.init({
+            duration: 800, 
+            easing: 'ease-in-out', 
+            once: true, 
+        });
+    }, []);
+
     const myForm = useRef<HTMLFormElement>(null)
 
     const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
@@ -30,7 +40,7 @@ const Contactemail: React.FC = () => {
         <div className='Contact-email-section py-4'>
             <div className="container">
                 <div className="row">
-                    <div className="email-left-side col-12 col-md-6">
+                    <div className="email-left-side col-12 col-md-6" data-aos="fade-right">
                         <h1 className='text-white text-center'>Don't hesitate to ask</h1>
                         <p className='text-white text-center'>Law is a complicated matter. It can cause you big problems if you ignore it. Let us help you!</p>
                         <div className="contact-form py-3">
@@ -46,7 +56,7 @@ const Contactemail: React.FC = () => {
                         </div>
                     </div>
 
-                    <div className="email-right-side col-12 col-md-6">
+                    <div className="email-right-side col-12 col-md-6" data-aos="fade-left">
                         <img src="/assets/images/contactemail/email1.webp" alt="Contact Us" className="img-fluid" />
                     </div>
                 </div>

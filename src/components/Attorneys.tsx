@@ -3,7 +3,7 @@ import axios from 'axios';
 import Attorney from './Attorney';
 import 'swiper/css';
 import 'swiper/css/pagination';
-import 'swiper/css/navigation'; // Import Swiper navigation styles
+import 'swiper/css/navigation'; 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay , Navigation } from 'swiper/modules';
 import NavButtons from './NavButtons';

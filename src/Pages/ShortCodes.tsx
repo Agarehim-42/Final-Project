@@ -1,9 +1,18 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { RiDoubleQuotesL } from "react-icons/ri";
 import { FaChevronRight} from "react-icons/fa";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 const ShortCodes:React.FC = () => {
+  useEffect(() => {
+    AOS.init({
+        duration: 800,
+        easing: 'ease-in-out', 
+        once: true, 
+    });
+}, []);
   return (
     <div className='py-5'>
         <div className='about-us-picture'>
@@ -12,130 +21,131 @@ const ShortCodes:React.FC = () => {
             <div className="container py-5">
               <div className="row">
                 <div className="col-12 col-md-6">
-                <div className='d-flex shortcodeleft py-5 flex-column'>
+                <div className='d-flex shortcodeleft py-5 flex-column'data-aos="fade-right">
                 <div className='h1ler py-2'>
                   <h1>H1 HEADING TAG</h1>
-                  <p>Cras mattis consectetur purus sit amet fermentum. Cras mattis consectetur purus sit amet fermentum. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                  <p className='paragraf-opacitys'>Cras mattis consectetur purus sit amet fermentum. Cras mattis consectetur purus sit amet fermentum. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
                 </div>
                 <div className='h1ler py-2'>
                   <h2>H1 HEADING TAG</h2>
-                  <p>Cras mattis consectetur purus sit amet fermentum. Cras mattis consectetur purus sit amet fermentum. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                  <p className='paragraf-opacitys'>Cras mattis consectetur purus sit amet fermentum. Cras mattis consectetur purus sit amet fermentum. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
                 </div>
                 <div className='h1ler py-2'>
                   <h3>H1 HEADING TAG</h3>
-                  <p>Cras mattis consectetur purus sit amet fermentum. Cras mattis consectetur purus sit amet fermentum. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                  <p className='paragraf-opacitys'>Cras mattis consectetur purus sit amet fermentum. Cras mattis consectetur purus sit amet fermentum. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
                 </div>
                 <div className='h1ler py-2'>
                   <h4>H1 HEADING TAG</h4>
-                  <p>Cras mattis consectetur purus sit amet fermentum. Cras mattis consectetur purus sit amet fermentum. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                  <p className='paragraf-opacitys'>Cras mattis consectetur purus sit amet fermentum. Cras mattis consectetur purus sit amet fermentum. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
                 </div>
                 <div className='h1ler py-2'>
                   <h5>H1 HEADING TAG</h5>
-                  <p>Cras mattis consectetur purus sit amet fermentum. Cras mattis consectetur purus sit amet fermentum. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                  <p className='paragraf-opacitys'>Cras mattis consectetur purus sit amet fermentum. Cras mattis consectetur purus sit amet fermentum. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
                 </div>
                 <div className='h1ler py-2'>
                   <h6>H1 HEADING TAG</h6>
-                  <p>Cras mattis consectetur purus sit amet fermentum. Cras mattis consectetur purus sit amet fermentum. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                  <p className='paragraf-opacitys'>Cras mattis consectetur purus sit amet fermentum. Cras mattis consectetur purus sit amet fermentum. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
                 </div>
                 </div>
                 <div className='s-herf-altxett py-5'>
                 <div className="d-flex s-bukva-shortcut flex-row py-3 ">
                 <div className='s-orange-shortcode'><h2>S</h2></div>
-                <div className='px-3'><p>uis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec sed odio dui. Maecenas faucibus mollis interdum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Sed posuere consectetur est 
+                <div className='px-3'><p className='paragraf-opacitys'>uis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec sed odio dui. Maecenas faucibus mollis interdum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Sed posuere consectetur est 
                   at lobortis. Nullam quis risus eget urna mollis ornare vel eu leo.</p></div>
               
                 </div>
                 <div className="d-flex flex-row">
                 <div><h1>S</h1></div>
-                <div className='px-3'><p>uis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec sed odio dui. Maecenas faucibus mollis interdum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Sed posuere consectetur est at lobortis. Nullam quis risus eget urna mollis ornare vel eu leo.</p></div>
+                <div className='px-3 '><p className='paragraf-opacitys'>uis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec sed odio dui. Maecenas faucibus mollis interdum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Sed posuere consectetur est at lobortis. Nullam quis risus eget urna mollis ornare vel eu leo.</p></div>
                 </div>
                 </div>
 
                 <div className='text-aligin-short py-5'>
                   <div className='card-shortcut py-3'>
                     <h2 className='py-5'>Text Align Center</h2>
-                    <p className='text-center'>At nos hinc posthac, sitientis piros Afros. Integer legentibus erat a ante historiarum dapibus. Quisque placerat facilisis egestas cillum dolore. Pellentesque habitant morbi tristique senectus et netus. Quam temere in vitiis, legem sancimus haerentia.</p>
+                    <p className='text-center paragraf-opacitys'>At nos hinc posthac, sitientis piros Afros. Integer legentibus erat a ante historiarum dapibus. Quisque placerat facilisis egestas cillum dolore. Pellentesque habitant morbi tristique senectus et netus. Quam temere in vitiis, legem sancimus haerentia.</p>
                   </div>
                   <div className='card-shortcut py-3'>
-                    <h2 className='py-5'>Text Align Center</h2>
-                    <p className='text-center'>At nos hinc posthac, sitientis piros Afros. Integer legentibus erat a ante historiarum dapibus. Quisque placerat facilisis egestas cillum dolore. Pellentesque habitant morbi tristique senectus et netus. Quam temere in vitiis, legem sancimus haerentia.</p>
+                    <h2 className='py-5'>Text Align Right</h2>
+                    <p className='text-center paragraf-opacitys'>At nos hinc posthac, sitientis piros Afros. Integer legentibus erat a ante historiarum dapibus. Quisque placerat facilisis egestas cillum dolore. Pellentesque habitant morbi tristique senectus et netus. Quam temere in vitiis, legem sancimus haerentia.</p>
                   </div>
                   <div className='card-shortcut py-3'>
-                    <h2 className='py-5'>Text Align Center</h2>
-                    <p className='text-center'>At nos hinc posthac, sitientis piros Afros. Integer legentibus erat a ante historiarum dapibus. Quisque placerat facilisis egestas cillum dolore. Pellentesque habitant morbi tristique senectus et netus. Quam temere in vitiis, legem sancimus haerentia.</p>
+                    <h2 className='py-5'>Text Align Left</h2>
+                    <p className='text-center paragraf-opacitys'>At nos hinc posthac, sitientis piros Afros. Integer legentibus erat a ante historiarum dapibus. Quisque placerat facilisis egestas cillum dolore. Pellentesque habitant morbi tristique senectus et netus. Quam temere in vitiis, legem sancimus haerentia.</p>
                   </div>
                 </div>
 
-                <div className='table-shortcut py-5 d-flex justify-content-center align-items-center '>
+                <div className='table-shortcut py-5 d-flex flex-column  '>
+                <h2 className='py-5'>Table Style</h2>
                   <table>
-                    <tbody>
+                    <tbody className='justify-content-center align-items-center'>
                       <tr className='tr-short'>
-                        <th className=''>
+                        <th className=' text-center'>
                           Pharetra
                         </th>
-                        <th  className=''>
+                        <th  className=' text-center'>
                         Malesuada
                         </th>
-                        <th  className=''>
+                        <th  className=' text-center'>
                         Cursus
                         </th>
-                        <th  className=''>
+                        <th  className=' text-center'>
                         Euismod
                         </th>
                       </tr>
                       <tr className='tr-shorcut'>
-                        <th className=''>
+                        <th className=' text-center'>
                         Ipsum
                         </th>
-                        <th  className=''>
+                        <th  className=' text-center'>
                         Portalion
                         </th>
-                        <th  className=''>
+                        <th  className=' text-center'>
                         Elitesimo	
                         </th>
-                        <th  className=''>
+                        <th  className=' text-center'>
                         Aenean
                         </th>
                       </tr>
                       <tr className='tr-shorcut'>
-                        <th className=''>
+                        <th className=' text-center'>
                         Ipsum
                         </th>
-                        <th  className=''>
+                        <th  className=' text-center'>
                         Portalion
                         </th>
-                        <th  className=''>
+                        <th  className=' text-center'>
                         Elitesimo	
                         </th>
-                        <th  className=''>
+                        <th  className=' text-center'>
                         Aenean
                         </th>
                       </tr>
                       <tr className='tr-shorcut'>
-                        <th className=''>
+                        <th className=' text-center'>
                         Ipsum
                         </th>
-                        <th  className=''>
+                        <th  className=' text-center'>
                         Portalion
                         </th>
-                        <th  className=''>
+                        <th  className=' text-center'>
                         Elitesimo	
                         </th>
-                        <th  className=''>
+                        <th  className=' text-center'>
                         Aenean
                         </th>
                       </tr>
                       <tr className='tr-shorcut'>
-                        <th className=''>
+                        <th className=' text-center'>
                         Ipsum
                         </th>
-                        <th  className=''>
+                        <th  className='  text-center'>
                         Portalion
                         </th>
-                        <th  className=''>
+                        <th  className=' text-center'>
                         Elitesimo	
                         </th>
-                        <th  className=''>
+                        <th  className=' text-center'>
                         Aenean
                         </th>
                       </tr>
@@ -153,7 +163,7 @@ const ShortCodes:React.FC = () => {
              
                 </div> 
 
-                <div className="col-12 col-md-6">
+                <div className="col-12 col-md-6 " data-aos="fade-left">
                 <div className='recent-comments-blog py-3 px-5'>
         <h6 className='text-widget-ff py-3'><b>Shortcodes</b></h6>
         <div className='d-flex flex-column'>

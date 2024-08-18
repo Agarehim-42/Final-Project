@@ -1,15 +1,14 @@
-// import React, { useRef, useState } from 'react';
-// Import Swiper React components
+
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css/effect-fade';
-// Import Swiper styles
+
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
 
 
-// import required modules
+
 import { Autoplay, EffectFade,  Navigation } from 'swiper/modules';
 import Button from './Button';
 

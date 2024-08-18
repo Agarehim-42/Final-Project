@@ -1,10 +1,12 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { FaCar } from "react-icons/fa";
 import { FaUsers } from "react-icons/fa6";
 import { BsBank } from "react-icons/bs";
 import { MdSupport } from "react-icons/md";
 import { FaAmbulance } from "react-icons/fa";
 import { FaHome } from "react-icons/fa";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 
@@ -13,14 +15,23 @@ import { FaHome } from "react-icons/fa";
 
 
 const Lawmen:React.FC = () => {
+
+    useEffect(() => {
+        AOS.init({
+            duration: 800, 
+            easing: 'ease-in-out', 
+            once: true, 
+        });
+    }, []);
+
   return (
     <div className='lawmen-section text-white py-5'>
         <div className="container">
             <div className="row">
-                <div className="Jack-Smith container d-flex py-5 justify-content-center aligin-items-center col-12 col-md-12 col-lg-4">
+                <div className="Jack-Smith container d-flex py-5 justify-content-center aligin-items-center col-12 col-md-12 col-lg-4" data-aos="fade-left">
                     <img className='jacksmit' src="/assets/images/lawmen/jack-smith.webp" alt="" />
                 </div>
-            <div className="lawmen-left-side py-5 col-12 col-md-12 col-lg-4 d-flex flex-column">
+            <div className="lawmen-left-side py-5 col-12 col-md-12 col-lg-4 d-flex flex-column" data-aos="fade-down">
                 <div className="lawmen-card d-flex ">
                     <div className="lawyer-logo px-3">
                     <FaCar/>
@@ -50,7 +61,7 @@ const Lawmen:React.FC = () => {
                 </div>
 
             </div>
-            <div className="lawmen-left-side py-5 col-12 col-md-12 col-lg-4 d-flex flex-column">
+            <div className="lawmen-left-side py-5 col-12 col-md-12 col-lg-4  d-flex flex-column" data-aos="fade-right">
                 <div className="lawmen-card d-flex ">
                     <div className="lawyer-logo px-3">
                     <MdSupport/>

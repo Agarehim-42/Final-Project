@@ -3,7 +3,7 @@ import Blog from './Blog'
 import axios from 'axios';
 import { Swiper,  SwiperSlide } from 'swiper/react';
 
-// Import Swiper styles
+
 import 'swiper/css';
 import 'swiper/css/effect-fade';
 import 'swiper/css/navigation';
@@ -11,7 +11,7 @@ import 'swiper/css/pagination';
 
 
 
-// import required modules
+
 import { EffectFade, Navigation, Pagination } from 'swiper/modules';
 import { CiClock1 } from 'react-icons/ci';
 import { GoFileDirectoryFill } from 'react-icons/go';
@@ -92,7 +92,7 @@ const Blogs: React.FC = () => {
         spaceBetween: 50,
       },
     }}
-    modules={[Navigation, EffectFade ,  Pagination]} // Removed EffectFade from modules
+    modules={[Navigation, EffectFade ,  Pagination]} 
     className="mySwiper"
   >
     <SwiperSlide className='blog-swiper py-'>

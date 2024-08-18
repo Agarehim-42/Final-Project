@@ -1,9 +1,9 @@
 body {
     background-color: #fff;
     overflow-x: hidden;
-    
-   
-    
+
+
+
 }
 
 
@@ -13,6 +13,13 @@ body {
     border: 1px solid red;
 } */
 
+.custom-toast-container {
+    z-index: 9999999 !important;
+}
+
+
+
+
 
 header {
     position: sticky;
@@ -20,16 +27,30 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 99999; /* Digər elementlərdən üstündə olmasını təmin edir */
-    background-color: white; /* Arxa planı ağ edir ki, altdakı məzmun görünməsin */
-    height: 250px; /* Header-in hündürlüyünü uyğunlaşdır */
+    z-index: 9999; 
+    background-color: white;
+    height: 180px;
+}
+
+
+.scrolled {
+    height: 80px;
+
+}
+
+.top-navigation-wrapper.d-none {
+    display: none;
+}
+
+.navbar-scrolled .logo-header {
+    display: none;
 }
 
 .header.scrolled {
-    height: 120px; 
+    height: 120px;
     transition: height 0.3s ease, background-color 0.3s ease;
     padding-top: 30px;
-    z-index: 99999;
+    /* z-index: 99999; */
 
 }
 
@@ -67,6 +88,14 @@ header {
     font-style: inherit;
 }
 
+.navbarbasliq a { 
+    color: #555 !important;
+}
+
+.navbarbasliq a:hover {
+    color: #b1976b !important;
+}
+
 
 .mobile-menu {
     position: fixed;
@@ -75,7 +104,7 @@ header {
     height: 100%;
     width: 100%;
     background-color: #fff;
-    box-shadow: -2px 0 5px rgba(0,0,0,0.5);
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
     transform: translateX(100%);
     transition: transform 0.3s ease-in-out;
     z-index: 9999;
@@ -120,7 +149,7 @@ header {
 }
 
 .mobile-links a:hover {
-    color: #007bff;
+    color: #b1976b;
 }
 
 
@@ -219,7 +248,7 @@ header {
     font-size: 15px;
 }
 
-.Welcome-h3 , .professional-h3 {
+.Welcome-h3, .professional-h3 {
     color: #b1976b;
 }
 
@@ -227,7 +256,8 @@ header {
 /* Swiper naviqasiya düymələri üçün xüsusi tərz */
 .mySwiper .swiper-button-next,
 .mySwiper .swiper-button-prev {
-  color: #ffffff !important; /* Rəngini ağ edir və prioritet verir */
+    color: #ffffff !important;
+    /* Rəngini ağ edir və prioritet verir */
 }
 
 
@@ -312,7 +342,7 @@ header {
 
 }
 
-.a-practices-view , .talk-to-us , .phone-consult , .arrow-alt-right {
+.a-practices-view, .talk-to-us, .phone-consult, .arrow-alt-right {
     color: #b1976b;
 }
 
@@ -351,7 +381,7 @@ header {
     justify-content: center;
 }
 
-.consult-card1, .consult-card2, .consult-card3, .consult-card4, .consult-card5, .consult-card6, .consult-card7, .consult-card8 , .consult-card9 {
+.consult-card1, .consult-card2, .consult-card3, .consult-card4, .consult-card5, .consult-card6, .consult-card7, .consult-card8, .consult-card9 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -365,7 +395,8 @@ header {
     font-weight: 700;
 
 }
-.practice-card1, .practice-card2, .practice-card3, .practice-card4, .practice-card5, .practice-card6, .practice-card7, .practice-card8 , .practice-card9 {
+
+.practice-card1, .practice-card2, .practice-card3, .practice-card4, .practice-card5, .practice-card6, .practice-card7, .practice-card8, .practice-card9 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -434,6 +465,7 @@ header {
     opacity: 1;
     transform: scale(0.9);
 }
+
 .consult-card9:hover {
     background-image: url('/assets/images/consult/image9.webp');
     ;
@@ -495,6 +527,7 @@ header {
     opacity: 1;
     transform: scale(0.9);
 }
+
 .practice-card9:hover {
     background-image: url('/assets/images/consult/image9.webp');
     ;
@@ -511,7 +544,7 @@ header {
 .consult-card5,
 .consult-card6,
 .consult-card7,
-.consult-card8 ,
+.consult-card8,
 .consult-card9 {
     width: 300px;
     height: 200px;
@@ -531,7 +564,7 @@ header {
 .practice-card6,
 .practice-card7,
 .practice-card8,
-.practice-card9{
+.practice-card9 {
     width: 300px;
     height: 200px;
     display: flex;
@@ -548,7 +581,7 @@ header {
 
 
 
-.Testimonial-prev , .Testimonial-next {
+.Testimonial-prev, .Testimonial-next {
     /* text-decoration: none; Altından xətti silmək */
     border-color: #eaeaea;
     ;
@@ -564,7 +597,7 @@ header {
     border: none;
 }
 
-.Testimonial-prev:hover , .Testimonial-next:hover {
+.Testimonial-prev:hover, .Testimonial-next:hover {
     background-color: #b1976b;
     /* Hover zamanı rəng dəyişmək */
     color: #fff;
@@ -611,7 +644,6 @@ header {
     margin-right: 15px;
     border-radius: 1px;
     background-color: #b1976b
-
 }
 
 .blog-date-day {
@@ -640,7 +672,7 @@ header {
 }
 
 
-.Attorney-prev , .Attorney-next {
+.Attorney-prev, .Attorney-next {
     /* text-decoration: none; Altından xətti silmək */
     border-color: #eaeaea;
     ;
@@ -656,7 +688,7 @@ header {
     border: none;
 }
 
-.Attorney-prev:hover , .Attorney-next:hover {
+.Attorney-prev:hover, .Attorney-next:hover {
     background-color: #b1976b;
     /* Hover zamanı rəng dəyişmək */
     color: #fff;
@@ -675,12 +707,12 @@ header {
 
 
 .Contact-email-section {
-    background-image: url('/assets/images/contactemail/email1.jpg') ; 
-    
+    background-image: url('/assets/images/contactemail/email1.jpg');
+
 }
 
 
-.Client-prev , .Client-next {
+.Client-prev, .Client-next {
     /* text-decoration: none; Altından xətti silmək */
     border-color: #eaeaea;
     ;
@@ -696,7 +728,7 @@ header {
     border: none;
 }
 
-.Client-prev:hover , .Client-next:hover {
+.Client-prev:hover, .Client-next:hover {
     background-color: #b1976b;
     /* Hover zamanı rəng dəyişmək */
     color: #fff;
@@ -800,9 +832,11 @@ header {
 
 
 .about-us-picture {
-    background-image: url('/assets/images/aboutus/page-title-background.jpg') ;  
-    background-size: cover; /* Şəkilin div içərisində tam əhatə etməsi üçün */
-    background-position: center; /* Şəkilin ortasında yerləşməsi üçün */
+    background-image: url('/assets/images/aboutus/page-title-background.jpg');
+    background-size: cover;
+    /* Şəkilin div içərisində tam əhatə etməsi üçün */
+    background-position: center;
+    /* Şəkilin ortasında yerləşməsi üçün */
     height: 200px;
     display: flex;
     justify-content: center;
@@ -814,11 +848,11 @@ header {
     color: #b1976b;
 }
 
-.About-us-h3  {
+.About-us-h3 {
     font-style: italic;
 }
 
-.porta-h3  {
+.porta-h3 {
     letter-spacing: 1px;
     text-transform: uppercase;
 }
@@ -832,24 +866,29 @@ header {
 .iphone5-reng {
     background-color: #f5f5f5;
 }
-    
+
 
 .Fa-Book-About {
     background-color: #3e3e3e;
-    width: 78px; /* En */
-    height: 78px; /* Hündürlük */
-    
-    border-radius: 50%; /* Dairəvi forma */
+    width: 78px;
+    /* En */
+    height: 78px;
+    /* Hündürlük */
+
+    border-radius: 50%;
+    /* Dairəvi forma */
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Kölgə effekti */
-    margin: 20px auto; }
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Kölgə effekti */
+    margin: 20px auto;
+}
 
 .fa-book-color {
     color: #b1976b;
     font-size: 30px;
-  
+
 }
 
 .skill-png {
@@ -857,8 +896,8 @@ header {
     background-size: cover;
     background-position: center;
     height: 100%;
-   
-    
+
+
 }
 
 .skillboxlar h3 {
@@ -871,7 +910,7 @@ header {
     margin: 60px auto;
     color: #fff;
     padding: 20px;
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25) , 0 10px 10px rgba(0 ,0 , 0 , 0.22) ;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
 .skillboxlar li {
@@ -881,84 +920,94 @@ header {
 }
 
 .bar {
-    background-color: #353b48 ;
+    background-color: #353b48;
     display: block;
     height: 20px;
-    border: 1px solid rgba(0 ,0 , 0 , 0.3);
+    border: 1px solid rgba(0, 0, 0, 0.3);
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 1px 3px rgba(0 ,0 , 0 , 0.12) , 0 1px 2px rgba(0 ,0 , 0 , 0.24);
-    transition: all 0.3s cubic-bezier(.25 , .8 , .25 , 1);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
 }
 
 .bar:hover {
-    box-shadow: 0 14px 28px rgba(0 ,0 , 0 , 0.25) , 0 10px 10px rgba(0 ,0 , 0 , 0.22);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 
 }
 
 .bar span {
     height: 20px;
     float: left;
-    background: linear-gradient(135deg, rgba(236, 177, 0, 0.549)0% , rgba(252, 190, 103, 0.768)100% );
+    background: linear-gradient(135deg, rgba(236, 177, 0, 0.549)0%, rgba(252, 190, 103, 0.768)100%);
 }
 
-.Banking-Financial , .Corporate-Issue , .Family-Law , .Real-Estate {
+.Banking-Financial, .Corporate-Issue, .Family-Law, .Real-Estate {
     width: 90%;
 }
 
 .Banking-Financial {
     width: 100%;
-    animation: Banking-Financial 3s; 
-    
+    animation: Banking-Financial 3s;
+
 }
+
 .Corporate-Issue {
     width: 73%;
-    animation: Corporate-Issue 3s; 
+    animation: Corporate-Issue 3s;
 
 }
+
 .Family-Law {
     width: 82%;
-    animation: Family-Law 3s; 
+    animation: Family-Law 3s;
 
 }
+
 .Real-Estate {
     width: 63%;
-    animation: Real-Estate 3s; 
+    animation: Real-Estate 3s;
 
 }
 
 .skillboxlar li {
     list-style: none;
-  }
+}
 
 @keyframes Banking-Financial {
     0% {
         width: 0%;
     }
+
     100% {
         width: 100%;
     }
 }
+
 @keyframes Corporate-Issue {
     0% {
         width: 0%;
     }
+
     100% {
         width: 73%;
     }
 }
+
 @keyframes Family-Law {
     0% {
         width: 0%;
     }
+
     100% {
         width: 82%;
     }
 }
+
 @keyframes Real-Estate {
     0% {
         width: 0%;
     }
+
     100% {
         width: 63%;
     }
@@ -979,18 +1028,22 @@ header {
 }
 
 .line {
-    flex-grow: 1; /* Xəttin genişliyini artırmaq üçün */
-    height: 1px; /* Xəttin qalınlığı */
-    background-color: #000; /* Xəttin rəngi */
-    margin: 0 10px; /* İkon ilə xətt arasındakı məsafə */
-  }
+    flex-grow: 1;
+    /* Xəttin genişliyini artırmaq üçün */
+    height: 1px;
+    /* Xəttin qalınlığı */
+    background-color: #000;
+    /* Xəttin rəngi */
+    margin: 0 10px;
+    /* İkon ilə xətt arasındakı məsafə */
+}
 
-  .h6-read-blog{
+.h6-read-blog {
     color: #b1976b;
-  }
+}
 
-  
-  .men-pen-blog {
+
+.men-pen-blog {
     width: 100%;
     height: auto;
     object-fit: cover;
@@ -1000,26 +1053,26 @@ header {
 .men-pen-blog {
     width: 750px;
     height: 323px;
-  }
+}
 
 
-  .blog-box-in {
+.blog-box-in {
     font-size: 19px;
     font-style: italic;
     padding: 30px 30px 30px;
     line-height: 1.5;
     background-color: #b1976b;
     color: #fff;
-   
-   
-    border-radius: 4px;
-  }
 
-  .form-input {
+
+    border-radius: 4px;
+}
+
+.form-input {
     border-width: 0px;
     border-style: solid;
     width: 100%;
-     
+
     border-radius: 3px;
     font-size: 13px;
     padding: 17px 17px;
@@ -1029,121 +1082,106 @@ header {
 .search-input-container {
     position: relative;
     width: 70%;
-   
+
     display: flex;
     align-items: center;
-  }
+}
 
-  
-  .search-input {
+
+.search-input {
     width: 100%;
-    padding: 20px 10px ; /* Extra padding on the right for the icon */
+    padding: 20px 10px;
+    /* Extra padding on the right for the icon */
     border: 1px solid #ccc;
-    
+
     background-color: #ddd;
     border-radius: 4px;
     font-size: 14px;
-  }
+}
 
-  .search-input-error {
+.search-input-error {
     width: 100%;
-    padding: 10px 50px ; /* Extra padding on the right for the icon */
+    padding: 10px 50px;
+    /* Extra padding on the right for the icon */
     border: 1px solid #ccc;
-    
+
     background-color: #ddd;
     border-radius: 4px;
     font-size: 14px;
-  }
-  
-  .search-icon {
+}
+
+.search-icon {
     position: absolute;
-    right: 10px; /* Adjust this value as needed */
+    right: 10px;
+    /* Adjust this value as needed */
     font-size: 16px;
     color: #555;
     cursor: pointer;
-  }
-  
+}
 
-  .text-widget-ff {
+
+.text-widget-ff {
     font-style: italic;
-  }
+}
 
-  .card-blog-1 {
+.card-blog-1 {
     border-bottom: 1px solid #000;
 }
-  
+
 .span-blog-yazi {
     color: #b1976b;
 }
 
 .tag-cloud a {
-   
-        font-size: 11px !important;
-        display: block;
-        float: left;
-        padding: 7px 13px;
-        margin-right: 7px;
-        margin-top: 7px;
-        border: 0px solid;
-        border-color: inherit;
-        font-weight: bold;
-        text-transform: uppercase;
-        color: #ffffff;
-        background-color: #b1976b;
-        text-decoration: none;
-    }
+
+    font-size: 11px !important;
+    display: block;
+    float: left;
+    padding: 7px 13px;
+    margin-right: 7px;
+    margin-top: 7px;
+    border: 0px solid;
+    border-color: inherit;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #b1976b;
+    text-decoration: none;
+}
 
 
-   .blog-swiper {
+.blog-swiper {
     background-size: cover;
-        /* background-position: center; */
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      
-   }
+    /* background-position: center; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-   .red-error-page {
+}
+
+.red-error-page {
     text-align: center;
     padding: 50px 50px 60px;
     margin: 50px 0px 50px;
     background-color: #d65938;
-   }
+}
 
-   .frown-error {
+.frown-error {
     font-size: 89px;
-   }
+}
 
-   .search-input-container-error {
+.search-input-container-error {
     position: relative;
     width: 100%;
-   
+
     display: flex;
     align-items: center;
-  }
- 
-
-  header {
-  position: sticky;
-  top: 0; /* Header ekranın yuxarı hissəsində yapışacaq */
-  z-index: 99999999999; /* Header-in digər elementlərin üstündə olması üçün */
-  height: 150px;
 }
 
-.scrolled {
-    height: 80px; 
-   
-}
 
-.top-navigation-wrapper.d-none {
-    display: none;
-}
 
-.navbar-scrolled .logo-header {
-    display: none;
-}
 
 .shortcodeleft {
     border-bottom: 1px solid #ccc;
@@ -1154,16 +1192,16 @@ header {
     background-color: #ec4933;
     border-radius: 50%;
     font-size: 18px;
-   justify-content: center;
-   align-items: center;
-   display: flex;
-   width: 100%;
-   height:100%;
-  
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    height: 100%;
+
 }
 
 
-.s-herf-altxett , .card-shortcut , .table-shortcut , .block-quote-type ,.iki-dirnaq {
+.s-herf-altxett, .card-shortcut, .table-shortcut, .block-quote-type, .iki-dirnaq {
     border-bottom: 1px solid #ccc;
 }
 
@@ -1191,7 +1229,65 @@ table tr th {
 }
 
 
- 
+.paragraf-opacitys {
+    opacity: 0.7;
+}
+
+.services-container {
+    padding: 20px;
+  }
+  
+  .accordion-visible {
+    width: 100%;
+    background-color: #f1f1f1;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 15px;
+    text-align: left;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  .accordion-visible:hover {
+    background-color: #b1976b;
+    color: #fff;
+  }
+  
+  .icon {
+    transition: transform 0.3s ease;
+  }
+
+  .icon:hover {
+    color: #fff;
+    transition: transform 0.3s ease;
+  }
+  
+  .rotate {
+    transform: rotate(90deg);
+  }
+  
+  .accordion-toggle {
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+  
+  .accordion-content {
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-top: 1px solid #ddd;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+  }
+  
+  .accordion-toggle p {
+    margin: 0;
+  }
+  
 
 
 
@@ -1212,9 +1308,11 @@ table tr th {
 
     .navigation-button {
         display: flex;
-        justify-content: center; /* Aligns buttons to the left */
+        justify-content: center;
+        /* Aligns buttons to the left */
         align-items: center;
-        margin-bottom: 1rem; /* Adds space below the buttons */
+        margin-bottom: 1rem;
+        /* Adds space below the buttons */
     }
 
     .logo-header {
@@ -1226,7 +1324,7 @@ table tr th {
     } */
 
     .testimonial-paragraf {
-        font-size:9px;
+        font-size: 9px;
     }
 
 
@@ -1238,37 +1336,42 @@ table tr th {
     .men-pen-blog {
         width: 100%;
         height: 100%;
-      }
+    }
 
-      .learn-more-blog {
+    .learn-more-blog {
         font-size: 12px;
         font-style: normal;
-      }
+    }
 
 
-      .logo-header {
+    .logo-header {
         width: 130px;
     }
-    
+
     .s-orange-shortcode {
-        width: 260px; /* İstədiyiniz ölçülərə uyğunlaşdırın */
+        width: 260px;
+        /* İstədiyiniz ölçülərə uyğunlaşdırın */
         height: 40px;
-        background-color: #ec4933; /* Qırmızı rəng */
-        border-radius: 50%; /* Dairə formasını verir */
+        background-color: #ec4933;
+        /* Qırmızı rəng */
+        border-radius: 50%;
+        /* Dairə formasını verir */
         display: flex;
         align-items: center;
         justify-content: center;
-        color: white; /* Hərf rəngi */
-        font-size: 24px; /* Hərf ölçüsü */
-       
+        color: white;
+        /* Hərf rəngi */
+        font-size: 24px;
+        /* Hərf ölçüsü */
+
     }
 
-    
-
-   
 
 
-    
+
+
+
+
 
 }
 
@@ -1280,9 +1383,9 @@ table tr th {
         line-height: 20px;
         display: flex;
         padding: 0px 25px;
-        border-right-width: 1px;
+        /* border-right-width: 1px;
         border-right-style: solid;
-        border-right-color: gray;
+        border-right-color: gray; */
     }
 
     .phone-header {
@@ -1290,9 +1393,9 @@ table tr th {
         float: left;
         line-height: 20px;
         padding: 0px 25px;
-        border-right-width: 1px;
+        /* border-right-width: 1px;
         border-right-style: solid;
-        border-right-color: gray;
+        border-right-color: gray; */
 
     }
 
@@ -1423,7 +1526,7 @@ table tr th {
   } */
 
 
-  /* .navigation-button {
+    /* .navigation-button {
     display: flex;
     justify-content: center; 
     align-items: center;
@@ -1431,38 +1534,40 @@ table tr th {
 } */
 
 
-.navigation-button {
-    justify-content: flex-end;
-    margin-top: -4rem;
-}
+    .navigation-button {
+        justify-content: flex-end;
+        margin-top: -4rem;
+    }
 
-.skill-png {
-    background-image: url('/assets/images/lawmen/Lawmen.webp');
-    background-size: cover;
-    background-position: center;
-    height: 100%;
-   
-    
-}
+    .skill-png {
+        background-image: url('/assets/images/lawmen/Lawmen.webp');
+        background-size: cover;
+        background-position: center;
+        height: 100%;
 
 
+    }
 
-.practice-card1, .practice-card2, .practice-card3, .practice-card4, .practice-card5, .practice-card6, .practice-card7, .practice-card8, .practice-card9 {
-    width: 193px;
-    height: 178px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: auto;
-}
 
-.s-orange-shortcode {
-    width: 339px; /* Kiçik ekranlarda ölçüsünü azaldın */
-    height: 50px;
-    font-size: 20px; /* Hərf ölçüsünü də azaldın */
-}
+
+    .practice-card1, .practice-card2, .practice-card3, .practice-card4, .practice-card5, .practice-card6, .practice-card7, .practice-card8, .practice-card9 {
+        width: 193px;
+        height: 178px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin: auto;
+    }
+
+    .s-orange-shortcode {
+        width: 339px;
+        /* Kiçik ekranlarda ölçüsünü azaldın */
+        height: 50px;
+        font-size: 20px;
+        /* Hərf ölçüsünü də azaldın */
+    }
 
 
 
@@ -1473,6 +1578,7 @@ table tr th {
     .testi-imagee {
         display: none;
     }
+
     .navigation-button {
         justify-content: center;
         margin-top: 1rem;
@@ -1599,8 +1705,10 @@ table tr th {
 
     .navigation-button {
         display: flex;
-        justify-content: flex-end; /* Aligns buttons to the left */
-        margin-bottom: 1rem; /* Adds space below the buttons */
+        justify-content: flex-end;
+        /* Aligns buttons to the left */
+        margin-bottom: 1rem;
+        /* Adds space below the buttons */
     }
 
 
@@ -1613,8 +1721,8 @@ table tr th {
         background-size: cover;
         background-position: center;
         height: 100%;
-       
-        
+
+
     }
 
     .Commodo-tellus-bg {
@@ -1623,19 +1731,41 @@ table tr th {
     }
 
     .s-orange-shortcode {
-        width: 200px; /* İstədiyiniz ölçülərə uyğunlaşdırın */
+        width: 200px;
+        /* İstədiyiniz ölçülərə uyğunlaşdırın */
         height: 50px;
-        background-color: #ec4933; /* Qırmızı rəng */
-        border-radius: 50%; /* Dairə formasını verir */
+        background-color: #ec4933;
+        /* Qırmızı rəng */
+        border-radius: 50%;
+        /* Dairə formasını verir */
         display: flex;
         align-items: center;
         justify-content: center;
-        color: white; /* Hərf rəngi */
-        font-size: 24px; /* Hərf ölçüsü */
-       
+        color: white;
+        /* Hərf rəngi */
+        font-size: 24px;
+        /* Hərf ölçüsü */
+
     }
-   
-   
+
+
+    header {
+        position: sticky;
+        transition: height 0.3s ease, background-color 0.3s ease;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 9999; 
+        background-color: white;
+        height: 165px;
+    }
+
+    .email-header , .phone-header , .sosial-header {
+        padding-top: 16px;
+    }
+
+
+
 
 
 }

@@ -1,10 +1,20 @@
-import React from 'react'
+import React , {useEffect} from 'react'
 import { FaBook } from "react-icons/fa6";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 const Bookinfo: React.FC = () => {
+    useEffect(() => {
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out', 
+            once: true, 
+        });
+    }, []);
     return (
         <div className=' book-info'>
             <div className="row">
-                <div className="bookinfo-left-side py-5 col-12 col-md-6 py-3">
+                <div className="bookinfo-left-side py-5 col-12 col-md-6 py-3" data-aos="fade-right">
                     <div className="row container">
                         <div className=" d-flex justify-content-center align-items-center">
                             <FaBook className='bookicon text-white' />
@@ -15,7 +25,7 @@ const Bookinfo: React.FC = () => {
                         </div>
                     </div>
                 </div>
-                <div className="bookinfo-right-side py-5 col-12 col-md-6 py-3">
+                <div className="bookinfo-right-side py-5 col-12 col-md-6 py-3" data-aos="fade-left">
                     <div className="text-center">
                         <h3 className='text-dark'>Something About Us</h3>
                         <p className='text-dark'>Pellentesque Adipiscing Purus</p>
@@ -28,3 +38,5 @@ const Bookinfo: React.FC = () => {
 }
 
 export default Bookinfo;
+
+

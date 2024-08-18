@@ -9,6 +9,9 @@ import Blogs from './Pages/Blogs'
 import PracticeAreas from './Pages/PracticeAreas'
 import Error404 from './Pages/Error404'
 import ShortCodes from './Pages/ShortCodes'
+import Testimonial from './components/Testimonial'
+import Attorneys from './components/Attorneys'
+import Services from './Pages/Services'
 
 
 
@@ -28,6 +31,9 @@ function App() {
         <Route path='/PracticeAreas' element={<PracticeAreas/>}/>
         <Route path='*' element={<Error404/>}/>
         <Route path='Shortcodes' element={<ShortCodes/>}/>
+        <Route path='Testimonial' element={<Testimonial/>}/>
+        <Route path='Attorneys' element={<Attorneys/>}/>
+        <Route path='Services' element={<Services/>}/>
         </Route>
       </Routes>
       <Footer/>

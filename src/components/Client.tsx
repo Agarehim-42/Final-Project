@@ -1,6 +1,6 @@
 
 import { GrPrevious, GrNext } from "react-icons/gr";
-// Import Swiper React components
+
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
@@ -8,7 +8,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
-// import required modules
+
 import { Autoplay, Navigation } from 'swiper/modules';
 
 import NavButtons from './NavButtons';

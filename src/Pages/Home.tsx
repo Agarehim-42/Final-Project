@@ -24,7 +24,7 @@ const Home: React.FC = () => {
             <Testimonial />
             <Attorneys />
             <Contactemail />
-            <ToastContainer/>
+            <ToastContainer className="custom-toast-container"/>
             <Client />
         </div>
     )

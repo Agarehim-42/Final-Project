@@ -11,7 +11,7 @@ const Attorney: React.FC<attorneyProps> = ({ attorneyTitle, attorneyImage, attor
     return (
         <div className='attorney-card'>
             <div className="container">
-                <img src={attorneyImage} className="card-img-top attorneyimg" alt="..." />
+                <img src={attorneyImage} className="card-img-top attorneyimg py-3" alt="..." />
                 <div className="card-body text-center" >
                     <h2>{attorneyHead}</h2>
                     <p className="card-title py-3">{attorneyTitle}</p>
