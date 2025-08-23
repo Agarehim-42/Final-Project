@@ -1,17 +1,119 @@
-body {
-    background-color: #fff;
+/* Əsas scroll problemi üçün düzəlişlər */
+html, body {
+    width: 100%;
     overflow-x: hidden;
+    position: relative;
+}
 
+/* Header üçün düzəlişlər */
+header {
+    position: sticky;
+    transition: height 0.3s ease, background-color 0.3s ease;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    background-color: white;
+    height: 165px; /* Default hündürlük */
+}
 
+/* Scroll zamanı header */
+header.scrolled {
+    height: 80px;
+    padding-top: 0;
+}
 
+/* Top navigation üçün düzəliş */
+.top-navigation-wrapper {
+    transition: opacity 0.3s ease, height 0.3s ease;
+}
+
+.top-navigation-wrapper.d-none {
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+/* Əsas kontent üçün düzəliş */
+main {
+    width: 100%;
+    overflow: hidden;
+}
+
+/* Swiper slider üçün düzəliş */
+.mySwiper {
+    width: 100%;
+    overflow: hidden;
+}
+
+/* Section'lar üçün ümumi düzəliş */
+section {
+    width: 100%;
+    overflow: hidden;
+}
+
+/* Skillbox düzəlişi */
+.skillboxlar {
+    max-width: 100%;
+    overflow: hidden;
+}
+
+/* Mobile menu üçün düzəliş */
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 80%; /* Daha kiçik en */
+    max-width: 400px; /* Maksimum en */
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 10000; /* Daha yüksək z-index */
+    overflow-y: auto; /* Daxili scroll */
+}
+
+/* Media sorğularına kiçik düzəlişlər */
+@media (max-width: 991px) {
+    header {
+        height: auto;
+        min-height: 100px;
+    }
+    
+    header.scrolled {
+        height: auto;
+        min-height: 70px;
+    }
+    
+    .navbar {
+        padding: 10px 0;
+    }
+}
+
+@media (max-width: 767px) {
+    body {
+        overflow-x: hidden;
+    }
+    
+    .introduction h1,
+    .introduction2 h1 {
+        font-size: 40px !important;
+    }
+    
+    .consult-card1,
+    .consult-card2,
+    .consult-card3,
+    .consult-card4,
+    .practice-card1,
+    .practice-card2,
+    .practice-card3,
+    .practice-card4 {
+        width: 100% !important;
+        max-width: 300px;
+        margin: 10px auto;
+    }
 }
 
 
-
-
-/* * {
-    border: 1px solid red;
-} */
 
 .custom-toast-container {
     z-index: 9999999 !important;
